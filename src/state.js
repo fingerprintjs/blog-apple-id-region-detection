@@ -58,7 +58,7 @@ export function getDemoState() {
         : demoState.searchScope.filter((it) => !appScope.includes(it));
 
       const nextAppId = findAppCandidate(searchScope, exclude);
-      const isFinished = !nextAppId || demoState.searchScope.length === 1;
+      const isFinished = !nextAppId || searchScope.length === 1;
 
       setStateAndReload({
         isDetecting: !!nextAppId && !isFinished,

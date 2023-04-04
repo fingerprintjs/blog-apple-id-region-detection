@@ -15,13 +15,11 @@ export function Home({ onStartClick }) {
           alt="Apple ID Region Detection"
         />
 
-        <h1 className={styles.title}>
-          Unmasking <br /> Apple ID Region
-        </h1>
+        <h1 className={styles.title}>Smart App Banners Exploit Demo</h1>
 
         <p className={styles.description}>
-          Explore the intriguing exploit that leverages smart app banners to
-          reveal a user's Apple ID region without permissions
+          The exploit leverages the Smart App Banners features to reveal a
+          user's Apple ID region without permissions.
         </p>
 
         <button className={styles.button} onClick={onStartClick}>

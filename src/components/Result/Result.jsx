@@ -12,7 +12,7 @@ export function Result() {
       <Header />
 
       <section className={styles.content}>
-        <h1 className={styles.title}>Your location is</h1>
+        <h1 className={styles.title}>Your Apple ID region is:</h1>
 
         <p className={styles.countries}>
           {demoState.searchScope
