@@ -50,7 +50,7 @@ export default function App() {
         if (demoState.screenHeight === minHeightRef.current) {
           skipApp();
         }
-      }, 1000);
+      }, 2000);
 
       setTimeout(() => {
         if (demoState.screenHeight === currentHeightRef.current) {
