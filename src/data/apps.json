@@ -1,0 +1,2108 @@
+{
+  "329315203": {
+    "name": "Post & DHL",
+    "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH"
+    ]
+  },
+  "335187483": {
+    "name": "Amazon",
+    "countries": [
+      "BE",
+      "BG",
+      "HR",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "GB",
+      "KZ"
+    ]
+  },
+  "389581236": {
+    "name": "Tesco Grocery & Clubcard",
+    "countries": ["GB"]
+  },
+  "393765873": {
+    "name": "爱奇艺-《狂飙》开年必看",
+    "countries": ["CN"]
+  },
+  "431229947": {
+    "name": "Se Hvem",
+    "countries": ["NO"]
+  },
+  "432462569": {
+    "name": "馬會投注三合一 Classic 3-in-1",
+    "countries": ["HK"]
+  },
+  "437564823": {
+    "name": "Ana Vodafone",
+    "countries": ["US", "EG", "KW", "LY", "QA", "SA", "AE"]
+  },
+  "444087594": {
+    "name": "My Swisscom",
+    "countries": ["CH"]
+  },
+  "495157796": {
+    "name": "국세청 홈택스 [손택스]",
+    "countries": [
+      "BA",
+      "XK",
+      "ME",
+      "AF",
+      "CD",
+      "GA",
+      "GE",
+      "IQ",
+      "MA",
+      "RW",
+      "ZM",
+      "KR",
+      "NR",
+      "TO",
+      "VU"
+    ]
+  },
+  "504270602": {
+    "name": "Ryanair",
+    "countries": [
+      "CA",
+      "US",
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "DZ",
+      "IL",
+      "JO",
+      "MA",
+      "AU",
+      "NZ"
+    ]
+  },
+  "514262377": {
+    "name": "7-Eleven TH",
+    "countries": ["TH"]
+  },
+  "533159911": {
+    "name": "Postepay",
+    "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "GB"
+    ]
+  },
+  "545573417": {
+    "name": "Tipsport CZ",
+    "countries": ["CZ"]
+  },
+  "546608142": {
+    "name": "iHighway交通情報",
+    "countries": ["JP"]
+  },
+  "585629514": {
+    "name": "Zalando – Online fashion",
+    "countries": [
+      "US",
+      "AT",
+      "BE",
+      "HR",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "NL",
+      "NO",
+      "PL",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "IN",
+      "ZA",
+      "AU"
+    ]
+  },
+  "587238847": {
+    "name": "肯德基KFC(官方版)-宅急送外卖无接触配送",
+    "countries": ["CN", "HK", "MO", "TW"]
+  },
+  "593028703": {
+    "name": "Willy:s",
+    "countries": ["SE"]
+  },
+  "597880187": {
+    "name": "WILDBERRIES",
+    "countries": ["BY", "RU", "AM", "KZ", "KG", "UZ"]
+  },
+  "598781605": {
+    "name": "Tigo en Línea",
+    "countries": ["US", "GT"]
+  },
+  "632064380": {
+    "name": "Vinted: Sell vintage clothes",
+    "countries": [
+      "US",
+      "AT",
+      "BE",
+      "CZ",
+      "FR",
+      "DE",
+      "HU",
+      "IT",
+      "LT",
+      "LU",
+      "NL",
+      "PL",
+      "PT",
+      "SK",
+      "ES",
+      "SE",
+      "GB"
+    ]
+  },
+  "648859363": {
+    "name": "Tesco Ireland - Home Shopping",
+    "countries": ["IE"]
+  },
+  "651335156": {
+    "name": "Epassi",
+    "countries": [
+      "CA",
+      "US",
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "BR"
+    ]
+  },
+  "663699492": {
+    "name": "OLX.kz – объявления Казахстана",
+    "countries": ["RU", "KZ"]
+  },
+  "663780975": {
+    "name": "4411",
+    "countries": [
+      "US",
+      "AT",
+      "BY",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "HU",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB"
+    ]
+  },
+  "665094472": {
+    "name": "OLX.uz",
+    "countries": ["KG", "TJ", "TM", "UZ"]
+  },
+  "685125525": {
+    "name": "ANZ goMoney New Zealand",
+    "countries": ["AU", "NZ"]
+  },
+  "692753615": {
+    "name": "Wallapop",
+    "countries": [
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB"
+    ]
+  },
+  "740514933": {
+    "name": "S-mobiili",
+    "countries": ["EE", "FI", "SE"]
+  },
+  "755596884": {
+    "name": "Spond",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "DK",
+      "FI",
+      "FR",
+      "DE",
+      "IE",
+      "IT",
+      "LU",
+      "NL",
+      "NO",
+      "ES",
+      "SE",
+      "CH",
+      "UA",
+      "GB",
+      "AU"
+    ]
+  },
+  "806260257": {
+    "name": "Fortuna Sport",
+    "countries": ["CZ"]
+  },
+  "808325447": {
+    "name": "Ticketmaster NZ",
+    "countries": ["NZ"]
+  },
+  "830340223": {
+    "name": "TVer(ティーバー) 民放公式テレビ配信サービス",
+    "countries": ["JP"]
+  },
+  "881473495": {
+    "name": "OMV SMILE & DRIVE Slovensko",
+    "countries": ["SK"]
+  },
+  "887477687": {
+    "name": "e-fatura",
+    "countries": ["PT"]
+  },
+  "893849629": {
+    "name": "Lightbox NZ",
+    "countries": ["NZ"]
+  },
+  "925436649": {
+    "name": "Mercado Pago: cuenta digital",
+    "countries": [
+      "US",
+      "IT",
+      "ES",
+      "AR",
+      "BR",
+      "CL",
+      "CO",
+      "MX",
+      "PE",
+      "UY",
+      "AU"
+    ]
+  },
+  "959840394": {
+    "name": "Shopee: Chinese New Year Sale",
+    "countries": ["CN", "SG"]
+  },
+  "959841113": {
+    "name": "Shopee MY 2.2 Jimat Giler Sale",
+    "countries": ["MY"]
+  },
+  "959841443": {
+    "name": "Shopee COD 2.2 Sale",
+    "countries": ["ID"]
+  },
+  "959841449": {
+    "name": "Shopee: Mua Sắm Online",
+    "countries": ["VN"]
+  },
+  "959841453": {
+    "name": "Shopee 2.2 คืน คอยน์ คุ้ม",
+    "countries": ["TH"]
+  },
+  "959841854": {
+    "name": "Shopee PH: Shop this 2.2",
+    "countries": ["PH"]
+  },
+  "960322367": {
+    "name": "Mi Tigo (Antes Tigo Shop)",
+    "countries": ["US", "BO", "CO"]
+  },
+  "970506336": {
+    "name": "C More - Samlar familjen",
+    "countries": ["DK", "SE"]
+  },
+  "971265422": {
+    "name": "HBO Max: Stream TV & Movies",
+    "countries": [
+      "US",
+      "BA",
+      "BG",
+      "HR",
+      "CZ",
+      "DK",
+      "FI",
+      "HU",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "AI",
+      "AG",
+      "AR",
+      "BS",
+      "BB",
+      "BZ",
+      "BO",
+      "BR",
+      "VG",
+      "KY",
+      "CL",
+      "CO",
+      "CR",
+      "DM",
+      "DO",
+      "EC",
+      "SV",
+      "GD",
+      "GT",
+      "GY",
+      "HN",
+      "JM",
+      "MX",
+      "MS",
+      "NI",
+      "PA",
+      "PY",
+      "PE",
+      "KN",
+      "LC",
+      "VC",
+      "SR",
+      "TT",
+      "TC",
+      "UY",
+      "VE"
+    ]
+  },
+  "989673964": {
+    "name": "王者荣耀",
+    "countries": ["CN"]
+  },
+  "1003139529": {
+    "name": "온라인 패션 스토어 무신사",
+    "countries": ["KR"]
+  },
+  "1021183761": {
+    "name": "My Cyta",
+    "countries": [
+      "US",
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "AM",
+      "IL"
+    ]
+  },
+  "1039727169": {
+    "name": "交管12123",
+    "countries": ["CN"]
+  },
+  "1060683933": {
+    "name": "Too Good To Go: End Food Waste",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "DK",
+      "FR",
+      "DE",
+      "IE",
+      "IT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "ES",
+      "SE",
+      "CH",
+      "UA",
+      "GB"
+    ]
+  },
+  "1062518839": {
+    "name": "Kemiluppen",
+    "countries": ["DK"]
+  },
+  "1067166194": {
+    "name": "CGV Cinemas",
+    "countries": ["US", "VN"]
+  },
+  "1075378688": {
+    "name": "Nequi Colombia",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "XK",
+      "LU",
+      "ME",
+      "NL",
+      "PL",
+      "PT",
+      "RS",
+      "ES",
+      "SE",
+      "CH",
+      "GB",
+      "AF",
+      "CM",
+      "CD",
+      "CI",
+      "GA",
+      "GE",
+      "IQ",
+      "LY",
+      "MA",
+      "QA",
+      "RW",
+      "SA",
+      "ZM",
+      "AI",
+      "AR",
+      "BS",
+      "BO",
+      "BR",
+      "VG",
+      "KY",
+      "CL",
+      "CO",
+      "EC",
+      "GD",
+      "MX",
+      "MS",
+      "PY",
+      "PE",
+      "KN",
+      "VC",
+      "SR",
+      "TT",
+      "TC",
+      "UY",
+      "VE",
+      "AU",
+      "MV",
+      "MM",
+      "NR",
+      "NZ",
+      "SG",
+      "TO",
+      "VU"
+    ]
+  },
+  "1083974444": {
+    "name": "神盾測速照相",
+    "countries": ["TW"]
+  },
+  "1084793516": {
+    "name": "Walmart – Shopping Made Easy",
+    "countries": ["CA"]
+  },
+  "1087780386": {
+    "name": "Kaufland: Supermarket Offers",
+    "countries": [
+      "US",
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CZ",
+      "DK",
+      "FR",
+      "DE",
+      "LU",
+      "MD",
+      "NL",
+      "PL",
+      "RO",
+      "SK",
+      "CH",
+      "UA",
+      "VN"
+    ]
+  },
+  "1089127465": {
+    "name": "發票怪獸",
+    "countries": ["TW"]
+  },
+  "1106837687": {
+    "name": "Circle K",
+    "countries": ["DK", "EE", "LV", "LT", "NO", "PL", "SE"]
+  },
+  "1115120118": {
+    "name": "Klarna | Shop now. Pay later.",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "CZ",
+      "DK",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "IE",
+      "IT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "ES",
+      "SE",
+      "CH",
+      "GB",
+      "MX",
+      "AU",
+      "NZ"
+    ]
+  },
+  "1134403599": {
+    "name": "놀러와 마이홈 : 바람빛별하늘",
+    "countries": ["KR"]
+  },
+  "1142110895": {
+    "name": "抖音 - 温暖中国年",
+    "countries": ["CN"]
+  },
+  "1147249919": {
+    "name": "Yape",
+    "countries": [
+      "US",
+      "IT",
+      "PT",
+      "ES",
+      "GB",
+      "AR",
+      "BO",
+      "BR",
+      "CL",
+      "CO",
+      "MX",
+      "PA",
+      "PE",
+      "UY",
+      "VE"
+    ]
+  },
+  "1149312972": {
+    "name": "Kufar - объявления Беларуси",
+    "countries": ["BY", "RU", "UA"]
+  },
+  "1150288115": {
+    "name": "Garena Liên Quân Mobile",
+    "countries": ["VN"]
+  },
+  "1181309300": {
+    "name": "itsme",
+    "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "UA",
+      "GB"
+    ]
+  },
+  "1184264977": {
+    "name": "PayMe from HSBC",
+    "countries": ["CA", "US", "GB", "BM", "AU", "HK", "SG"]
+  },
+  "1186271926": {
+    "name": "Mein dm",
+    "countries": [
+      "AT",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "GB"
+    ]
+  },
+  "1193357041": {
+    "name": "Google Pay: Save and Pay",
+    "countries": ["US", "IN"]
+  },
+  "1218939596": {
+    "name": "O Meu Pingo Doce",
+    "countries": [
+      "CA",
+      "US",
+      "BE",
+      "DK",
+      "FR",
+      "DE",
+      "GR",
+      "IS",
+      "IE",
+      "IT",
+      "LU",
+      "NO",
+      "PL",
+      "PT",
+      "RU",
+      "SI",
+      "ES",
+      "SE",
+      "GB",
+      "AO",
+      "CV",
+      "GW",
+      "IN",
+      "MZ",
+      "ST",
+      "AR",
+      "BR",
+      "CO",
+      "AU",
+      "ID",
+      "MO",
+      "PH"
+    ]
+  },
+  "1235601864": {
+    "name": "TikTok",
+    "countries": [
+      "KH",
+      "ID",
+      "JP",
+      "KR",
+      "LA",
+      "MO",
+      "MY",
+      "MM",
+      "PH",
+      "SG",
+      "TW",
+      "TH",
+      "VN"
+    ]
+  },
+  "1238611143": {
+    "name": "Lidl Plus",
+    "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "UA",
+      "GB"
+    ]
+  },
+  "1254341709": {
+    "name": "GO タクシーが呼べるアプリ 旧MOV×JapanTaxi",
+    "countries": ["JP"]
+  },
+  "1266591536": {
+    "name": "adidas",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "CZ",
+      "DK",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "IE",
+      "IT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "SK",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "GB",
+      "BH",
+      "EG",
+      "IN",
+      "IL",
+      "KW",
+      "OM",
+      "QA",
+      "SA",
+      "ZA",
+      "AE",
+      "AR",
+      "BR",
+      "CL",
+      "CO",
+      "EC",
+      "MX",
+      "PE",
+      "AU",
+      "JP",
+      "KR",
+      "MY",
+      "NZ",
+      "PH",
+      "SG",
+      "TH",
+      "VN"
+    ]
+  },
+  "1276020039": {
+    "name": "VšZP",
+    "countries": [
+      "US",
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "UA",
+      "GB"
+    ]
+  },
+  "1308143944": {
+    "name": "台灣彩券",
+    "countries": ["TW"]
+  },
+  "1321803705": {
+    "name": "和平精英",
+    "countries": ["CN"]
+  },
+  "1322310031": {
+    "name": "ONE PIECE バウンティラッシュ - アクションゲーム",
+    "countries": ["JP"]
+  },
+  "1340650234": {
+    "name": "Paramount+",
+    "countries": [
+      "CA",
+      "AT",
+      "FR",
+      "DE",
+      "IE",
+      "IT",
+      "CH",
+      "GB",
+      "AR",
+      "BO",
+      "BR",
+      "CL",
+      "CO",
+      "CR",
+      "DO",
+      "EC",
+      "SV",
+      "GT",
+      "HN",
+      "MX",
+      "NI",
+      "PA",
+      "PY",
+      "PE",
+      "UY",
+      "VE",
+      "AU"
+    ]
+  },
+  "1354962285": {
+    "name": "APCOA FLOW",
+    "countries": ["NO"]
+  },
+  "1359614310": {
+    "name": "Singapore Pools",
+    "countries": ["SG"]
+  },
+  "1392404561": {
+    "name": "Rimi",
+    "countries": [
+      "US",
+      "EE",
+      "FI",
+      "DE",
+      "IE",
+      "LV",
+      "LT",
+      "NL",
+      "NO",
+      "SE",
+      "UA",
+      "GB"
+    ]
+  },
+  "1393036007": {
+    "name": "MAXIMA",
+    "countries": ["LT"]
+  },
+  "1435783608": {
+    "name": "PayPay-ペイペイ",
+    "countries": ["JP"]
+  },
+  "1437787639": {
+    "name": "InPost Mobile",
+    "countries": [
+      "CA",
+      "US",
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA"
+    ]
+  },
+  "1443589821": {
+    "name": "MyEdenred",
+    "countries": [
+      "AT",
+      "BG",
+      "HR",
+      "CY",
+      "DE",
+      "GR",
+      "LU",
+      "NL",
+      "PL",
+      "RO",
+      "SK",
+      "CH",
+      "GB",
+      "AR",
+      "CO",
+      "PE",
+      "JP"
+    ]
+  },
+  "1445003295": {
+    "name": "Min Læge",
+    "countries": ["DK"]
+  },
+  "1445659646": {
+    "name": "belbet Игровые автоматы, Слоты",
+    "countries": ["BY"]
+  },
+  "1449275596": {
+    "name": "Uber AZ — request taxis",
+    "countries": ["AZ"]
+  },
+  "1458072671": {
+    "name": "剪映 - 轻而易剪",
+    "countries": ["CN"]
+  },
+  "1458364994": {
+    "name": "Ticketmaster",
+    "countries": [
+      "AT",
+      "BE",
+      "CZ",
+      "DK",
+      "FI",
+      "DE",
+      "NL",
+      "NO",
+      "PL",
+      "ES",
+      "SE",
+      "CH",
+      "ZA",
+      "AE"
+    ]
+  },
+  "1463054197": {
+    "name": "miDGT",
+    "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "GB"
+    ]
+  },
+  "1463776084": {
+    "name": "OPay-We are beyond Banking",
+    "countries": ["US", "NG", "CN"]
+  },
+  "1465861405": {
+    "name": "MONSTER UNIVERSE",
+    "countries": ["JP"]
+  },
+  "1468454200": {
+    "name": "番茄小说-温暖中国年",
+    "countries": ["CN"]
+  },
+  "1478350915": {
+    "name": "Amazon India Shop, Pay, miniTV",
+    "countries": ["IN"]
+  },
+  "1479656820": {
+    "name": "PalmPay",
+    "countries": ["CA", "US", "GB", "KE", "NG"]
+  },
+  "1481812175": {
+    "name": "Shopee 2.2: 1ª Liquida do Ano",
+    "countries": ["BR"]
+  },
+  "1486598248": {
+    "name": "Binge",
+    "countries": ["AU"]
+  },
+  "1487419316": {
+    "name": "マイナポイント",
+    "countries": ["JP"]
+  },
+  "1489403660": {
+    "name": "Everyday Rewards",
+    "countries": ["AU"]
+  },
+  "1492433957": {
+    "name": "서민금융진흥원",
+    "countries": ["KR"]
+  },
+  "1498219396": {
+    "name": "MAXIMA Latvija",
+    "countries": ["LV"]
+  },
+  "1498607143": {
+    "name": "Lemon8 (เลมอนเอท)",
+    "countries": ["US", "GB", "ID", "JP", "MY", "PH", "SG", "TH", "VN"]
+  },
+  "1504038308": {
+    "name": "SportyBet - Sports Betting App",
+    "countries": ["GH", "KE", "NG"]
+  },
+  "1505720247": {
+    "name": "Song Kiếm Loạn Vũ",
+    "countries": [
+      "CA",
+      "US",
+      "CZ",
+      "FR",
+      "DE",
+      "RU",
+      "SA",
+      "AU",
+      "JP",
+      "KR",
+      "SG",
+      "VN"
+    ]
+  },
+  "1506727482": {
+    "name": "Kørekort",
+    "countries": ["DK", "DE", "SE"]
+  },
+  "1510817530": {
+    "name": "Estamp",
+    "countries": ["US", "BH", "KW", "OM", "QA", "SA", "AE"]
+  },
+  "1516453498": {
+    "name": "AliExpress: Интернет-магазин",
+    "countries": [
+      "BY",
+      "MD",
+      "RU",
+      "AM",
+      "AZ",
+      "GE",
+      "KZ",
+      "KG",
+      "TJ",
+      "TM",
+      "UZ"
+    ]
+  },
+  "1517055351": {
+    "name": "Subway® - Official App",
+    "countries": ["AT", "FI", "FR", "DE", "IE", "NL", "SE", "GB"]
+  },
+  "1523514712": {
+    "name": "PC Health",
+    "countries": ["CA"]
+  },
+  "1527438894": {
+    "name": "Slagalica Kviz",
+    "countries": [
+      "CA",
+      "US",
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB"
+    ]
+  },
+  "1530944632": {
+    "name": "Mijn DHL",
+    "countries": ["NL"]
+  },
+  "1533034655": {
+    "name": "澳门航空",
+    "countries": ["CN", "HK", "MO", "TW"]
+  },
+  "1533512531": {
+    "name": "tamara | Shop & Split Payments",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "HR",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IT",
+      "LU",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RU",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "BH",
+      "EG",
+      "IN",
+      "IQ",
+      "JO",
+      "KW",
+      "LB",
+      "MA",
+      "OM",
+      "QA",
+      "SA",
+      "ZA",
+      "TN",
+      "AE",
+      "YE",
+      "AU",
+      "HK",
+      "JP",
+      "KR",
+      "PK",
+      "PH",
+      "SG",
+      "VN"
+    ]
+  },
+  "1533612248": {
+    "name": "D.DOPA",
+    "countries": ["TH"]
+  },
+  "1534563432": {
+    "name": "mypostnord",
+    "countries": ["NO", "PL", "UA"]
+  },
+  "1535673981": {
+    "name": "Mighty DOOM",
+    "countries": ["CA", "FI", "NO", "SE", "AU", "NZ"]
+  },
+  "1536885649": {
+    "name": "쿠팡플레이",
+    "countries": ["KR"]
+  },
+  "1544427616": {
+    "name": "WiFi万能钥匙-wi-fi密码管家安全热点一键极速连",
+    "countries": ["CN", "HK", "MO", "TW"]
+  },
+  "1544429501": {
+    "name": "WiFi万能钥匙极速版 - 安全wi-fi无线上网管家",
+    "countries": ["CN", "HK", "MO", "TW"]
+  },
+  "1544884479": {
+    "name": "蛋仔派对",
+    "countries": ["CN"]
+  },
+  "1545316216": {
+    "name": "GetGo Carsharing",
+    "countries": [
+      "CA",
+      "US",
+      "DK",
+      "FR",
+      "IT",
+      "NL",
+      "ES",
+      "GB",
+      "AU",
+      "BN",
+      "HK",
+      "NZ",
+      "SG",
+      "TW"
+    ]
+  },
+  "1549262958": {
+    "name": "Star+",
+    "countries": [
+      "AR",
+      "BO",
+      "BR",
+      "CL",
+      "CO",
+      "CR",
+      "DO",
+      "EC",
+      "SV",
+      "GT",
+      "HN",
+      "MX",
+      "NI",
+      "PA",
+      "PY",
+      "PE",
+      "UY",
+      "VE"
+    ]
+  },
+  "1551315538": {
+    "name": "OLX Pakistan – Online Shopping",
+    "countries": ["US", "GB", "ZA", "AE", "PK"]
+  },
+  "1552990335": {
+    "name": "かんたんnetprint－セブン‐イレブンでかんたん印刷",
+    "countries": ["JP"]
+  },
+  "1553871328": {
+    "name": "Sundhedskortet",
+    "countries": ["DK"]
+  },
+  "1554257918": {
+    "name": "Shopee CL: Compra En Línea",
+    "countries": ["CL"]
+  },
+  "1555921204": {
+    "name": "Mawaeid",
+    "countries": ["US", "GB", "BH", "SA"]
+  },
+  "1555977975": {
+    "name": "馬會開戶口",
+    "countries": ["HK"]
+  },
+  "1562697442": {
+    "name": "Instabox",
+    "countries": ["SE"]
+  },
+  "1569382782": {
+    "name": "Walley",
+    "countries": ["FI", "NO", "SE"]
+  },
+  "1574658617": {
+    "name": "抖音-記錄美好生活",
+    "countries": ["HK", "MO"]
+  },
+  "1578902078": {
+    "name": "Asda Rewards",
+    "countries": ["GB"]
+  },
+  "1586839342": {
+    "name": "Biedronka - Shakeomat, gazetki",
+    "countries": [
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RU",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB"
+    ]
+  },
+  "1588263601": {
+    "name": "Basic-Fit",
+    "countries": ["CA", "BE", "FR", "DE", "LU", "NL", "ES", "GB", "HK"]
+  },
+  "1589232895": {
+    "name": "1xBet - Sports Betting",
+    "countries": [
+      "CY",
+      "MT",
+      "ES",
+      "AM",
+      "SC",
+      "KH",
+      "ID",
+      "KG",
+      "MY",
+      "MM",
+      "PH",
+      "TW",
+      "TH"
+    ]
+  },
+  "1589504689": {
+    "name": "Tigo Money Paraguay",
+    "countries": ["US", "PY"]
+  },
+  "1592509395": {
+    "name": "ueno",
+    "countries": [
+      "US",
+      "DE",
+      "IT",
+      "NO",
+      "IN",
+      "AR",
+      "BO",
+      "BR",
+      "CL",
+      "CO",
+      "PY",
+      "UY"
+    ]
+  },
+  "1593229561": {
+    "name": "Douglas Parfüméria",
+    "countries": ["HU"]
+  },
+  "1598460384": {
+    "name": "Trust Bank SG",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "HR",
+      "CZ",
+      "DK",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "GB",
+      "IN",
+      "QA",
+      "ZA",
+      "AE",
+      "BR",
+      "AU",
+      "HK",
+      "ID",
+      "JP",
+      "KR",
+      "MO",
+      "MY",
+      "MM",
+      "NZ",
+      "PH",
+      "SG",
+      "LK",
+      "TW",
+      "TH",
+      "VN"
+    ]
+  },
+  "1598909871": {
+    "name": "نفاذ | NAFATH",
+    "countries": ["US", "GB", "SA"]
+  },
+  "1599753450": {
+    "name": "Riba Smith",
+    "countries": ["CA", "US", "IT", "CO", "CR", "MX", "PA"]
+  },
+  "1610978415": {
+    "name": "Trumore",
+    "countries": ["TR"]
+  },
+  "1611766069": {
+    "name": "A101 Plus",
+    "countries": [
+      "CA",
+      "US",
+      "AL",
+      "AT",
+      "BY",
+      "BE",
+      "BA",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "XK",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "MD",
+      "ME",
+      "NL",
+      "MK",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "QA",
+      "SA",
+      "AE",
+      "AU",
+      "CN",
+      "HK",
+      "KR"
+    ]
+  },
+  "1611955391": {
+    "name": "Повітряна тривога",
+    "countries": [
+      "CA",
+      "US",
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MD",
+      "ME",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "CH",
+      "TR",
+      "UA",
+      "GB",
+      "AE"
+    ]
+  },
+  "1612175933": {
+    "name": "Play Together VNG",
+    "countries": ["VN"]
+  },
+  "1613667783": {
+    "name": "Ticketmaster MX",
+    "countries": ["MX"]
+  },
+  "1619262637": {
+    "name": "WePlay - 파티게임",
+    "countries": ["KR"]
+  },
+  "1623985775": {
+    "name": "譚仔三哥米線 TamJai SamGor Mixian",
+    "countries": ["HK"]
+  },
+  "1631984107": {
+    "name": "ブルーロック Project: World Champion",
+    "countries": ["JP"]
+  },
+  "1633613413": {
+    "name": "封神殿：決戰神州",
+    "countries": ["HK", "MO", "TW"]
+  },
+  "1635929354": {
+    "name": "地鐵跑酷-Subway Surfers 港澳台官方正版",
+    "countries": ["HK", "MO", "TW"]
+  },
+  "1636757125": {
+    "name": "Starbucks Kuwait",
+    "countries": ["US", "GB", "KW", "LB", "SA", "AE"]
+  },
+  "1640613273": {
+    "name": "이모탈 소울",
+    "countries": ["KR"]
+  },
+  "1642440471": {
+    "name": "牌坊— 港式麻雀、台灣16章、鬥地主、牛牛、老虎機",
+    "countries": [
+      "CA",
+      "IE",
+      "RS",
+      "GB",
+      "EG",
+      "IL",
+      "AU",
+      "HK",
+      "ID",
+      "JP",
+      "MO",
+      "MY",
+      "NZ",
+      "PK",
+      "PW",
+      "PH",
+      "SG",
+      "TW",
+      "TH",
+      "VN"
+    ]
+  },
+  "1643464725": {
+    "name": "Pure Tuber it: Video & Nhạ",
+    "countries": ["LA", "PH", "TH", "VN"]
+  },
+  "1644042837": {
+    "name": "Hypic - Photo Editor",
+    "countries": [
+      "CA",
+      "US",
+      "FR",
+      "DE",
+      "IT",
+      "NL",
+      "PL",
+      "ES",
+      "SE",
+      "TR",
+      "GB",
+      "SA",
+      "AE",
+      "AR",
+      "BR",
+      "MX",
+      "AU",
+      "HK",
+      "ID",
+      "JP",
+      "KR",
+      "MO",
+      "MY",
+      "PH",
+      "SG",
+      "TW",
+      "TH",
+      "VN"
+    ]
+  },
+  "1645039442": {
+    "name": "VIPSHOP SG",
+    "countries": ["ID", "MY", "SG", "TH", "VN"]
+  },
+  "1659427373": {
+    "name": "cora Be & Lux",
+    "countries": ["BE", "FR", "LU"]
+  },
+  "6443947003": {
+    "name": "Bondee",
+    "countries": ["JP", "KR", "MY", "PH", "SG", "TW", "TH"]
+  },
+  "6444692469": {
+    "name": "Cooking Papa:Cookstar",
+    "countries": [
+      "US",
+      "AU",
+      "BT",
+      "BN",
+      "KH",
+      "FJ",
+      "ID",
+      "JP",
+      "KZ",
+      "KR",
+      "KG",
+      "LA",
+      "MY",
+      "MV",
+      "FM",
+      "MN",
+      "MM",
+      "NR",
+      "NP",
+      "NZ",
+      "PK",
+      "PW",
+      "PG",
+      "PH",
+      "SG",
+      "SB",
+      "LK",
+      "TJ",
+      "TH",
+      "TO",
+      "TM",
+      "UZ",
+      "VU",
+      "VN"
+    ]
+  },
+  "6444619754": {
+    "name": "少女戰爭",
+    "countries": ["HK", "MO", "TW"]
+  },
+  "6443659232": {
+    "name": "Dunkin' International",
+    "countries": ["SA"]
+  },
+  "6444040417": {
+    "name": "MyKes",
+    "countries": ["KE"]
+  },
+  "6444175433": {
+    "name": "2GIS KZ",
+    "countries": ["BY", "AZ", "KZ", "KG", "UZ"]
+  },
+  "6443602613": {
+    "name": "Radioplayer",
+    "countries": [
+      "CA",
+      "AT",
+      "BE",
+      "DK",
+      "FI",
+      "FR",
+      "DE",
+      "IE",
+      "IT",
+      "NO",
+      "ES",
+      "CH",
+      "GB"
+    ]
+  }
+}

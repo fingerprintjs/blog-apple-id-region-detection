@@ -1,0 +1,53 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 180px;
+  height: 150px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  text-align: center;
+}
+
+.button {
+  appearance: none;
+  width: 156px;
+  height: 56px;
+  color: #ffffff;
+  background-color: #ff5d22;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Inter";
+  padding: 16px;
+  cursor: pointer;
+  margin-top: 48px;
+}

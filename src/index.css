@@ -1,0 +1,17 @@
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  background-color: #141415;
+  color: #fafafa;
+  height: 100%;
+  font-family: "Inter", sans-serif, Arial;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  color: #ff5d22;
+}
