@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function isMobileSafari() {
   return isWebKit() && !isDesktopSafari();
@@ -10,6 +10,8 @@ export function reloadPage() {
 
 export function useVisualViewportHeight() {
   const startHeight = window.visualViewport.height;
+  const currentHeightRef = useRef(startHeight);
+  const minHeightRef = useRef(startHeight);
   const [currentHeight, setCurrentHeight] = useState(startHeight);
   const [minHeight, setMinHeight] = useState(startHeight);
 
@@ -22,6 +24,9 @@ export function useVisualViewportHeight() {
         return;
       }
 
+      currentHeightRef.current = height;
+      minHeightRef.current = height;
+
       setCurrentHeight(height);
       setMinHeight((minValue) => Math.min(minValue, height));
     }
@@ -32,7 +37,13 @@ export function useVisualViewportHeight() {
       window.visualViewport.removeEventListener("resize", handleResize);
   }, []);
 
-  return { startHeight, currentHeight, minHeight };
+  return {
+    startHeight,
+    currentHeight,
+    currentHeightRef,
+    minHeight,
+    minHeightRef,
+  };
 }
 
 export function renderSmartAppBanner(appId) {

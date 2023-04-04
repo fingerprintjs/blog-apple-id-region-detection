@@ -58,12 +58,28 @@ export function getDemoState() {
         : demoState.searchScope.filter((it) => !appScope.includes(it));
 
       const nextAppId = findAppCandidate(searchScope, exclude);
+      const isFinished = !nextAppId || demoState.searchScope.length === 1;
+
+      setStateAndReload({
+        isDetecting: !!nextAppId && !isFinished,
+        isFinished,
+        exclude,
+        searchScope,
+        nextAppId,
+      });
+    },
+
+    skipApp() {
+      const demoState = getState();
+      const appId = demoState.nextAppId;
+      const exclude = [...demoState.exclude, appId];
+
+      const nextAppId = findAppCandidate(demoState.searchScope, exclude);
 
       setStateAndReload({
         isDetecting: !!nextAppId,
         isFinished: !nextAppId,
         exclude,
-        searchScope,
         nextAppId,
       });
     },

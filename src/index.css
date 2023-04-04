@@ -8,6 +8,7 @@ body,
   height: 100%;
   font-family: "Inter", sans-serif, Arial;
   -webkit-font-smoothing: antialiased;
+  touch-action: none;
 }
 
 h1,

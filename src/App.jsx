@@ -18,7 +18,8 @@ const FACEBOOK_APP_ID = 284882215;
 
 export default function App() {
   const isSupported = useMemo(() => isMobileSafari(), []);
-  const { minHeight, currentHeight } = useVisualViewportHeight();
+  const { minHeight, minHeightRef, currentHeight, currentHeightRef } =
+    useVisualViewportHeight();
 
   const handleStartClick = useCallback(() => {
     const { startDemoAndReload } = getDemoState();
@@ -26,7 +27,8 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const { demoState, setDemoStateAndReload, setTestResult } = getDemoState();
+    const { demoState, setDemoStateAndReload, setTestResult, skipApp } =
+      getDemoState();
 
     window.scrollTo(0, 0);
 
@@ -41,11 +43,17 @@ export default function App() {
       }, 800);
     }
 
-    if (demoState.isBrowserSupported && demoState.nextAppId) {
+    if (demoState.isDetecting) {
       renderSmartAppBanner(demoState.nextAppId);
 
       setTimeout(() => {
-        if (demoState.screenHeight === window.visualViewport.height) {
+        if (demoState.screenHeight === minHeightRef.current) {
+          skipApp();
+        }
+      }, 1000);
+
+      setTimeout(() => {
+        if (demoState.screenHeight === currentHeightRef.current) {
           setTestResult(false);
         } else {
           setTestResult(true);
@@ -77,6 +85,10 @@ export default function App() {
 
   const { demoState } = getDemoState();
 
+  if (demoState.isFinished) {
+    return <Result />;
+  }
+
   if (demoState.isValidatingBrowser) {
     return null;
   }
@@ -90,10 +102,6 @@ export default function App() {
 
   if (demoState.isBrowserSupported && demoState.isDetecting) {
     return <InProgress />;
-  }
-
-  if (demoState.isFinished) {
-    return <Result />;
   }
 
   return <Home onStartClick={handleStartClick} />;

@@ -16,8 +16,8 @@
 
 .heroImage {
   width: 180px;
-  height: 150px;
-  margin-bottom: 32px;
+  max-height: 16vh;
+  margin-bottom: 24px;
 }
 
 .title {
@@ -49,5 +49,5 @@
   font-family: "Inter";
   padding: 16px;
   cursor: pointer;
-  margin-top: 48px;
+  margin-top: 32px;
 }
