@@ -189,6 +189,17 @@
         document.location.reload();
       }
 
+      function handleTryAnyway(event) {
+        event.preventDefault();
+
+        setStateAndReload({
+          isValidatingBrowser: false,
+          isBrowserSupported: true,
+          isDetecting: true,
+          nextAppId: findAppCandidate(state.searchScope),
+        });
+      }
+
       function listenVisualViewportResize() {
         window.visualViewport.addEventListener(
           "resize",
@@ -216,7 +227,6 @@
               isBrowserSupported: true,
               isDetecting: true,
               nextAppId: findAppCandidate(state.searchScope),
-              screenHeightWithBanner: nextHeight,
             },
             300
           );
@@ -349,8 +359,10 @@
           renderUnsupportedBrowserMode();
         } else if (state.isFinished) {
           renderFinalResult();
-        } else {
+        } else if (state.isDetecting) {
           renderInProgress();
+        } else {
+          renderFooterInProgress();
         }
       }
 
@@ -403,7 +415,7 @@
           "The demo works only in non-private Safari tabs and may not work inside application's Webview";
         document.body.appendChild(paragraph);
 
-        renderFooterInProgress();
+        renderFooterInProgress(true);
       }
 
       function renderFooter() {
@@ -423,14 +435,22 @@
         document.body.appendChild(footer);
       }
 
-      function renderFooterInProgress() {
+      function renderFooterInProgress(showTryAnyway = false) {
         const footer = document.createElement("footer");
 
         const resetLink = document.createElement("a");
         resetLink.href = "#";
-        resetLink.textContent = "Reset and try again";
+        resetLink.textContent = "Reset";
         resetLink.onclick = handleReset;
         footer.appendChild(resetLink);
+
+        if (showTryAnyway) {
+          const tryAnywayLink = document.createElement("a");
+          tryAnywayLink.href = "#";
+          tryAnywayLink.textContent = "Try Anyway";
+          tryAnywayLink.onclick = handleTryAnyway;
+          footer.appendChild(tryAnywayLink);
+        }
 
         document.body.appendChild(footer);
       }
