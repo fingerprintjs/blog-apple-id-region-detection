@@ -5,7 +5,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import async from "async";
 import { setTimeout } from "timers/promises";
 
-const asyncLimit = 10;
+const asyncLimit = 1;
 const countryMap = JSON.parse(
   readFileSync("./data/apple-regions.json").toString()
 );
@@ -52,29 +52,25 @@ export async function parseAvailableRegionsForApp(appId) {
 export async function checkAppAvailabilityForRegion(
   appId,
   countryCode,
-  retry = 0
+  retry = 0,
+  e = null
 ) {
-  return fetch(`https://apps.apple.com/${countryCode}/app/test/id${appId}`)
-    .then((response) => response.text())
-    .then((text) => {
-      if (!text.includes("375380948")) {
-        if (retry >= 1) {
-          debug(appId, countryCode, text);
-        } else {
-          // Probably a protection
-          return setTimeout(5000).then(() =>
-            checkAppAvailabilityForRegion(appId, countryCode, retry + 1)
-          );
-        }
-      }
-
-      return text.includes(appId);
-    });
-}
-
-function debug(appId, region, text) {
-  if (!existsSync(`./responses/${appId}`)) {
-    mkdirSync(`./responses/${appId}`, { recursive: true });
+  if (retry === 2) {
+    throw e;
   }
-  writeFileSync(`./responses/${appId}/${region}.html`, text);
+
+  return fetch(`https://itunes.apple.com/${countryCode}/lookup?id=${appId}`)
+    .then((response) => response.json())
+    .then((json) => {
+      if (json.resultCount === 0) {
+        return false;
+      } else {
+        return true;
+      }
+    })
+    .catch((e) =>
+      setTimeout(2000).then(() =>
+        checkAppAvailabilityForRegion(appId, countryCode, retry + 1, e)
+      )
+    );
 }

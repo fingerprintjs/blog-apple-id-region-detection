@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "async": "^3.2.4",
-    "node-fetch": "^3.3.0",
+    "node-fetch": "^3.3.1",
     "yargs": "^17.6.2"
   }
 }

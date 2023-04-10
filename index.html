@@ -107,7 +107,7 @@
         const FACEBOOK_APP_ID = 284882215;
         const BROWSER_VALIDATION_TIMEOUT = 1000;
         const BANNER_REFRESH_TIMEOUT = 300;
-        const BANNER_SHOWN_TIMEOUT = 3000;
+        const BANNER_SHOWN_TIMEOUT = 4000;
 
         // Refresh screen height after successful banner
         if (window.visualViewport.height < state.screenHeight) {
@@ -493,7 +493,7 @@
           title.textContent = "Your Apple ID country:";
         } else {
           title.textContent = "Possible countries detected:";
-          // document.body.style["touch-action"] = "auto";
+          document.body.style["touch-action"] = "auto";
         }
 
         document.body.appendChild(title);
